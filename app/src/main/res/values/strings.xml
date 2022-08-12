@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Weather Application</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sun">SUN</string>
+    <string name="current_weather_image">CURRENT WEATHER IMAGE</string>
+    <string name="search">SEARCH</string>
+    <string name="favourites">FAVORITES</string>
+    <string name="enter_name">Enter the city\'s name</string>
+    <string name="current_data">Current date: %s</string>
+    <string name="last_update">Последнее обновление: %s</string>
 </resources>
