@@ -16,8 +16,6 @@ class WeatherRepositoryImpl @Inject constructor(
     private val mapper: WeatherMapper
 ) : WeatherRepository {
 
-
-
     override suspend fun searchCity(name: String): WeatherModel? {
         val response = getWeatherDtoResponse(name)
         response.body()?.toString()?.let { Log.d("FIX_BUG", it) }
