@@ -1,0 +1,26 @@
+# Weather Application
+
+
+# STACK:
+
+### - GLIDE
+
+### - NAVIGATION COMPONENT
+
+### - DAGGER
+
+### - RETROFIT
+
+### - COROUTINES
+
+### - MVVM
+
+### - VIEW BINDING
+
+
+
+This APP works with WEATHER API ([DOCUMENTATION](https://www.weatherapi.com/docs/))
+# APPLICATION FEATURES:
+- SEARCH CITY AND CHECK WEATHER
+- PREDICTIONS FOR 2 WEEKS
+- HOURLY WEATHER PREDICTIONS FOR CURRENT DAY
