@@ -29,7 +29,6 @@ class WeatherRepositoryImpl @Inject constructor(
         return try {
             api.getWeatherByCity(name = name)
         } catch (e: Exception) {
-            Log.d("FIX_BUG", e.message.toString())
             getWeatherDtoResponse(name = name)
         }
     }
