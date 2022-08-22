@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:background="@color/white"
-        android:queryHint="@string/enter_name"
+        app:defaultQueryHint="@string/enter_name"
         app:iconifiedByDefault="false"
         app:layout_constraintTop_toTopOf="parent" />
 

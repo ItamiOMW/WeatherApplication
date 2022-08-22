@@ -11,7 +11,14 @@ interface ApiService {
     @GET(FORECAST_ENDPOINT)
     suspend fun getWeatherByCity(
         @Query(QUERY_KEY_PARAM) key: String = API_KEY,
-        @Query(QUERY_CITY_NAME_PARAM) name: String,
+        @Query(QUERY_GET_WEATHER_PARAM) name: String,
+        @Query(QUERY_DAYS_PARAM) days: String = COUNT_FORECAST_DAYS,
+    ): Response<WeatherDto>
+
+    @GET(FORECAST_ENDPOINT)
+    suspend fun getWeatherByLocation(
+        @Query(QUERY_KEY_PARAM) key: String = API_KEY,
+        @Query(QUERY_GET_WEATHER_PARAM) coordinates: String,
         @Query(QUERY_DAYS_PARAM) days: String = COUNT_FORECAST_DAYS,
     ): Response<WeatherDto>
 
@@ -20,7 +27,7 @@ interface ApiService {
 
         //QUERY PARAMS
         private const val QUERY_KEY_PARAM = "key"
-        private const val QUERY_CITY_NAME_PARAM = "q"
+        private const val QUERY_GET_WEATHER_PARAM = "q"
         private const val QUERY_DAYS_PARAM = "days"
 
         //END POINTS

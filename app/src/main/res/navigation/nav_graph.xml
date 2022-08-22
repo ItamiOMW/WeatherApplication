@@ -5,15 +5,6 @@
     android:id="@+id/nav_graph"
     app:startDestination="@id/mainFragment">
     <fragment
-        android:id="@+id/favouritesFragment"
-        android:name="com.example.weatherapplication.presentation.screens.favorites_screen.FavouritesFragment"
-        android:label="fragment_favourites"
-        tools:layout="@layout/fragment_favourites" >
-        <action
-            android:id="@+id/action_favouritesFragment_to_detailFragment"
-            app:destination="@id/detailFragment" />
-    </fragment>
-    <fragment
         android:id="@+id/detailFragment"
         android:name="com.example.weatherapplication.presentation.screens.detail_screen.DetailFragment"
         android:label="fragment_detail"
@@ -21,6 +12,9 @@
         <argument
             android:name="weatherModel"
             app:argType="com.example.weatherapplication.domain.model.WeatherModel" />
+        <action
+            android:id="@+id/action_detailFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
     </fragment>
     <fragment
         android:id="@+id/mainFragment"
@@ -31,4 +25,18 @@
             android:id="@+id/action_mainFragment_to_detailFragment"
             app:destination="@id/detailFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/currentLocationWeatherFragment"
+        android:name="com.example.weatherapplication.presentation.screens.current_city_screen.CurrentLocationWeatherFragment"
+        android:label="fragment_current_location_weather"
+        tools:layout="@layout/fragment_current_location_weather" >
+        <action
+            android:id="@+id/action_currentLocationWeatherFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="com.example.weatherapplication.presentation.screens.map_screen.MapsFragment"
+        android:label="fragment_maps"
+        tools:layout="@layout/fragment_maps" />
 </navigation>
