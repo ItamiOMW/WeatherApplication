@@ -8,4 +8,9 @@
     <string name="enter_name">Enter the city\'s name</string>
     <string name="current_data">Current date: %s</string>
     <string name="last_update">Последнее обновление: %s</string>
+    <string name="your_city_weather">YOUR CITY WEATHER</string>
+    <string name="map">MAP</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="define_the_city">DEFINE THE CITY</string>
+    <string name="click_to_see_detail_info">CLICK TO SEE DETAIL INFO</string>
 </resources>

@@ -6,4 +6,14 @@
         android:icon="@drawable/ic_search"
         android:title="@string/search"/>
 
+    <item
+        android:id="@+id/currentLocationWeatherFragment"
+        android:icon="@drawable/ic_location"
+        android:title="@string/your_city_weather"/>
+
+    <item
+        android:id="@+id/mapsFragment"
+        android:icon="@drawable/ic_map"
+        android:title="@string/map"/>
+
 </menu>
